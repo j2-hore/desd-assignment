@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Film Database</title>
+    </head>
+    <body>
+        <ol>
+            {% for x in films %}
+                <li>{{x.title}} {{x.age_rating}} {{x.duration}} {{x.trailer_description}}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>

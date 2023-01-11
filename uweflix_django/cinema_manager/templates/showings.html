@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Film Showing Database</title>
+    </head>
+    <body>
+        <ol>
+            {% for x in showings %}
+                <li>{{x.title}} {{x.date}} {{x.time}}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
